@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(300deg, #29302f 0, #282c2b 25%, #272727 50%, #262324 75%, #241e20 100%);
+	font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-size: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*CABECALHO DA PAGE*/
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.menu-cabecario{
+    display: flex;
+    gap: 32px;
+}
+.menu-cabecalho-item{
+    font-weight: 400;
+    color: #ffffff;
+}
+.menu-cabecalho-item:hover{
+    color: #07722f;
+    transition: 0.5s;
+}
+.cabecalho-nome{
+    font-weight: 400;
+    color: #FFFf;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+.cabecalho-nome:hover{
+    color: #07722f;
+    animation: 0.5s;
+}
+
+
+/*CONTEUDO DA PAGE*/
+.conteudo{
+    border-top: 0.4px solid #07722f;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: auto; 
+    color: #ffffff;
+    margin-bottom: 48px;
+    padding-top: 70px;
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.conteudo-principal-escrito-titulo{
+    font-size: 40px;
+    font-weight: 400;
+}
+.conteudo-principal-escrito-subtitulo{
+    font-size: 20px;
+    font-weight: 400;
+}
+.conteudo-principal-escrito-botao{
+    background-color: #07722f;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.conteudo-principal-escrito-botao:hover{
+    background-color: white;
+    color:#52527a;
+    transition: 0.5s;
+}
+.conteudo-principal-imagem{
+    width: 20%;
+    padding: 10px; border-radius: 50%; display: inline-block;
+    background: #07722f;
+    background: -webkit-linear-gradient(#07722f, rgb(121, 184, 109)); 
+    background: -o-linear-gradient(#07722f, rgb(121, 184, 109)); 
+    background: -moz-linear-gradient(#07722f, rgb(121, 184, 109)); 
+    background: linear-gradient(#07722f, rgb(121, 184, 109)); 
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.conteudo-secundario-interesses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    padding-top: 48px;
+}
+.conteudo-secundario-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    padding-top: 48px;
+}
+.conteudo-secundario-titulo{
+    font-weight: 400;
+    font-size: 20px;
+}
+.conteudo-secundario-paragrafo{
+    font-weight: 400;
+    font-size: 16px;
+}
+/*RODAPÉ DA PAGE*/
+footer{  
+    border-top: 0.4px solid #07722f;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-top: auto;
+}
+
+footer li{
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.icons a{
+    background: #07722f;
+    color: #272727;
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 100%;
+    display: flex;
+}
+.icons a:hover{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu-rodape a{
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.menu-rodape a:hover{
+    color: #07722f;
+    transition: 0.5s;
+}
+
+.footer-copyright{
+    background-color:#07722f;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.footer-copyright p{
+    margin-bottom: 0px;
+}
