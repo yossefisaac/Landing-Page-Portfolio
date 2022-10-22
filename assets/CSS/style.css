@@ -270,3 +270,8 @@ footer li{
 .footer-copyright p{
     margin-bottom: 0px;
 }
+
+/*SCROLLREVEAL*/
+.conteudo-principal-escrito-titulo, .conteudo-principal-escrito-subtitulo, .conteudo-principal-escrito-botao, .imagem-cards{
+    visibility: hidden;
+}
