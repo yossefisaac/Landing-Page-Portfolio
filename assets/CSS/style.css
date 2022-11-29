@@ -13,6 +13,7 @@ html{
 }
 
 body{
+    width:100%;margin: 0 auto;min-width:600px;max-width:3000px;
     background-image: linear-gradient(300deg, #29302f 0, #282c2b 25%, #272727 50%, #262324 75%, #241e20 100%);
 	font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -22,7 +23,6 @@ body{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
-    width: 100%;
 }
 
 a{
@@ -48,10 +48,10 @@ li{
 .menu-cabecalho-item{
     font-weight: 400;
     color: #ffffff;
+    transition: 0.5s;
 }
 .menu-cabecalho-item:hover{
     color: #07722f;
-    transition: 0.5s;
 }
 .cabecalho-nome{
     font-weight: 400;
@@ -104,12 +104,11 @@ li{
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
-
+    transition: 0.5s;
 }
 .conteudo-principal-escrito-botao:hover{
     background-color: white;
     color:#52527a;
-    transition: 0.5s;
 }
 .conteudo-principal-imagem{
     width: 20%;
@@ -165,10 +164,10 @@ li{
     border-radius: 20%;
     display: flex;
     margin: 5px;
+    transition: 0.5s;
 }
 .icons-skills a:hover{
     color: #ffffff;
-    transition: 0.5s;
     transform: scale(1.2);
 }
 
@@ -202,11 +201,11 @@ li{
     border-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     transition: box-shadow .25s;
+    transition: 0.5s;
 }
 .cards:hover {
   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   transform: scale(1.1);
-  transition: 0.5s;
 }
 
 .imagem-cards {
@@ -250,19 +249,19 @@ footer li{
     font-size: 20px;
     border-radius: 100%;
     display: flex;
+    transition: 0.5s;
 }
 .icons a:hover{
     color: #ffffff;
-    transition: 0.5s;
 }
 
 .menu-rodape a{
     color: #ffffff;
     text-transform: capitalize;
+    transition: 0.5s;
 }
 .menu-rodape a:hover{
     color: #07722f;
-    transition: 0.5s;
 }
 
 .footer-copyright{
@@ -280,4 +279,60 @@ footer li{
 /*SCROLLREVEAL*/
 .conteudo-principal-escrito-titulo, .conteudo-principal-escrito-subtitulo, .conteudo-principal-escrito-botao, .imagem-cards, .portfolio-title{
     visibility: hidden;
+}
+
+@media (max-width:600px){
+
+    body{
+        width: 100%;margin: 0 auto;
+    }
+
+    .conteudo-principal{
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito h1,h2{
+        font-size: 24px;
+    }
+
+    .conteudo-principal-imagem{
+        width: 40%;
+        margin-top: 30px;
+    }
+    
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+    p{
+        font-size: 10px;
+    }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    p{
+        font-size: 12px;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    p{
+        font-size: 14px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    p{
+        font-size: 9px;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    p{
+        font-size: 7px;
+    }
 }
